@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3529205236382566028}
   - component: {fileID: 5953651689165592070}
-  - component: {fileID: 5449719547085169260}
-  - component: {fileID: 3512483167483197034}
   - component: {fileID: 3170247465108937382}
+  - component: {fileID: 5726107336929876272}
+  - component: {fileID: 1696124815823011102}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -61,37 +61,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.5, z: 0}
---- !u!114 &5449719547085169260
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5714666751039596726}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90f414bfb25394b5ba9d998382c96fcf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  controller: {fileID: 5953651689165592070}
-  playerAnimator: {fileID: 3512483167483197034}
-  moveSpeed: 1.75
-  turnSpeed: 12
-  gravity: -16
-  moveAction: {fileID: 0}
---- !u!114 &3512483167483197034
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5714666751039596726}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3a0c01141c0d4454a0c0c28b085cd35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimator
-  animator: {fileID: 3321235992387629917}
 --- !u!114 &3170247465108937382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,8 +74,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInteraction
   interactAction: {fileID: 0}
-  playerAnimator: {fileID: 3512483167483197034}
-  playerController: {fileID: 5449719547085169260}
+  playerAnimator: {fileID: 1696124815823011102}
+  playerController: {fileID: 5726107336929876272}
+--- !u!114 &5726107336929876272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5714666751039596726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e4c26829050646d0af951149d8bdea4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+  controller: {fileID: 5953651689165592070}
+  playerAnimator: {fileID: 1696124815823011102}
+  moveSpeed: 1.5
+  turnSpeed: 12
+  gravity: -20
+  moveAction: {fileID: 0}
+--- !u!114 &1696124815823011102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5714666751039596726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa3aa7bba019b48aeaf04c29dacb1b5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimator
+  animator: {fileID: 3321235992387629917}
 --- !u!1001 &7518812992732737238
 PrefabInstance:
   m_ObjectHideFlags: 0
