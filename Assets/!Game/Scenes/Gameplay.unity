@@ -501,11 +501,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 269c222c3d29a4887824e34d4472e394, type: 3}
---- !u!95 &870106350 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 3321235992387629917, guid: 93eef77e4f89d4db28083eac9072d7ac, type: 3}
-  m_PrefabInstance: {fileID: 8715648949335704992}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &874163081 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4388542917934427740, guid: d4de53f8652e24de697ff1be72bb0126, type: 3}
@@ -766,20 +761,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1664448335
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc1515ab76e54f068e2f2207940fab32, type: 3}
-  m_Name: Player/Move
-  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
-  m_Asset: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  m_ActionId: 351f2ccd-1f9f-44bf-9bec-d62ac5c5f408
 --- !u!114 &1822780853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -825,47 +806,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1907502058 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5714666751039596726, guid: 93eef77e4f89d4db28083eac9072d7ac, type: 3}
-  m_PrefabInstance: {fileID: 8715648949335704992}
-  m_PrefabAsset: {fileID: 0}
---- !u!143 &1907502062 stripped
-CharacterController:
-  m_CorrespondingSourceObject: {fileID: 5953651689165592070, guid: 93eef77e4f89d4db28083eac9072d7ac, type: 3}
-  m_PrefabInstance: {fileID: 8715648949335704992}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1907502063
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1907502058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa3aa7bba019b48aeaf04c29dacb1b5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimator
-  animator: {fileID: 870106350}
---- !u!114 &1907502064
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1907502058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e4c26829050646d0af951149d8bdea4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  controller: {fileID: 1907502062}
-  playerAnimator: {fileID: 1907502063}
-  moveSpeed: 5
-  turnSpeed: 12
-  gravity: -20
-  moveAction: {fileID: 1822780853}
 --- !u!114 &2119604075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1049,18 +989,6 @@ PrefabInstance:
       propertyPath: interactAction
       value: 
       objectReference: {fileID: 2119604075}
-    - target: {fileID: 3170247465108937382, guid: 93eef77e4f89d4db28083eac9072d7ac, type: 3}
-      propertyPath: playerAnimator
-      value: 
-      objectReference: {fileID: 1907502063}
-    - target: {fileID: 3170247465108937382, guid: 93eef77e4f89d4db28083eac9072d7ac, type: 3}
-      propertyPath: playerController
-      value: 
-      objectReference: {fileID: 1907502064}
-    - target: {fileID: 3512483167483197034, guid: 93eef77e4f89d4db28083eac9072d7ac, type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 870106350}
     - target: {fileID: 3529205236382566028, guid: 93eef77e4f89d4db28083eac9072d7ac, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.4367862
@@ -1101,42 +1029,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5449719547085169260, guid: 93eef77e4f89d4db28083eac9072d7ac, type: 3}
-      propertyPath: gravity
-      value: -16
-      objectReference: {fileID: 0}
-    - target: {fileID: 5449719547085169260, guid: 93eef77e4f89d4db28083eac9072d7ac, type: 3}
-      propertyPath: moveSpeed
-      value: 1.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 5449719547085169260, guid: 93eef77e4f89d4db28083eac9072d7ac, type: 3}
-      propertyPath: controller
-      value: 
-      objectReference: {fileID: 1907502062}
-    - target: {fileID: 5449719547085169260, guid: 93eef77e4f89d4db28083eac9072d7ac, type: 3}
-      propertyPath: moveAction
-      value: 
-      objectReference: {fileID: 1664448335}
-    - target: {fileID: 5449719547085169260, guid: 93eef77e4f89d4db28083eac9072d7ac, type: 3}
-      propertyPath: playerAnimator
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 5714666751039596726, guid: 93eef77e4f89d4db28083eac9072d7ac, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5449719547085169260, guid: 93eef77e4f89d4db28083eac9072d7ac, type: 3}
-    - {fileID: 3512483167483197034, guid: 93eef77e4f89d4db28083eac9072d7ac, type: 3}
+    - target: {fileID: 5726107336929876272, guid: 93eef77e4f89d4db28083eac9072d7ac, type: 3}
+      propertyPath: moveAction
+      value: 
+      objectReference: {fileID: 1822780853}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5714666751039596726, guid: 93eef77e4f89d4db28083eac9072d7ac, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1907502064}
-    - targetCorrespondingSourceObject: {fileID: 5714666751039596726, guid: 93eef77e4f89d4db28083eac9072d7ac, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1907502063}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93eef77e4f89d4db28083eac9072d7ac, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
