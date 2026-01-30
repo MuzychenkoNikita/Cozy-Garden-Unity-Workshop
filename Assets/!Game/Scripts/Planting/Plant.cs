@@ -18,16 +18,19 @@ public class PlantStage
 public class Plant : MonoBehaviour
 {
 
-    private Plot _plot;
+    private PlantStage _stage => PlantData.Stages[_growthStage];
+
+    [SerializeField] private GameObject _dirtPile;
     [field: SerializeField] public PlantData PlantData { get; private set; }
 
-    private PlantStage _stage => PlantData.Stages[_growthStage];
+    private Plot _plot;
+    private GameObject _plantObject;
 
     private int _growthStage;
     private float _growthTimer;
     private float _plantTime;
 
-    private GameObject _plantObject;
+    private bool _finishedGrowing;
     
     public void InitializePlant(Plot plot)
     {
@@ -46,6 +49,8 @@ public class Plant : MonoBehaviour
 
     private void Update()
     {
+        if (_finishedGrowing) return;
+        
         // Initial Growth check
         if (_growthStage <= 0)
         {
@@ -66,8 +71,7 @@ public class Plant : MonoBehaviour
 
     private void ProgressGrowth()
     {
-        if(_growthStage >= PlantData.Stages.Length - 1)
-            return;
+        if (_growthStage >= PlantData.Stages.Length - 1) return;
         
         if (_plantObject != null)
         {
@@ -77,5 +81,12 @@ public class Plant : MonoBehaviour
         _growthStage++;
         _plantObject = _stage.Object;
         _plantObject.SetActive(true);
+        
+        
+        if (_growthStage >= PlantData.Stages.Length - 1)
+        {
+            _dirtPile.gameObject.SetActive(false);
+            _finishedGrowing = true;
+        }
     }
 }

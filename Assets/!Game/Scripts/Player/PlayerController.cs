@@ -69,4 +69,10 @@ public class PlayerController : MonoBehaviour
         Vector3 finalMove = moveDir * moveSpeed + new Vector3(0f, velocity.y, 0f);
         controller.Move(finalMove * Time.deltaTime);
     }
+
+    public void LookAtPoint(Vector3 transformPosition)
+    {
+        Vector3 lookPos = new Vector3(transformPosition.x, transform.position.y, transformPosition.z);
+        transform.LookAt(lookPos);
+    }
 }

@@ -7,6 +7,8 @@ public class PlayerInteraction : MonoBehaviour
     
     [SerializeField] private InputActionReference interactAction;
 
+    [SerializeField] private PlayerAnimator playerAnimator;
+    [SerializeField] private PlayerController playerController;
 
     private void OnEnable()
     {
@@ -31,6 +33,9 @@ public class PlayerInteraction : MonoBehaviour
         Debug.Log($"[PlayerInteraction] Interact Action Performed");
 
         if (SystemsProvider.PlantingSystem.IsPlotActive == false) return;
+        
+        playerAnimator.TriggerPlowAnimation();
+        playerController.LookAtPoint(SystemsProvider.PlantingSystem.ActivePlot.transform.position);
         
         SystemsProvider.PlantingSystem.ActivePlot.Plant();
     }

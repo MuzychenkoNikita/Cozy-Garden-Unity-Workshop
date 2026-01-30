@@ -775,6 +775,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
   m_Asset: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_ActionId: 351f2ccd-1f9f-44bf-9bec-d62ac5c5f408
+--- !u!114 &1730490979 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3512483167483197034, guid: 93eef77e4f89d4db28083eac9072d7ac, type: 3}
+  m_PrefabInstance: {fileID: 8715648949335704992}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3a0c01141c0d4454a0c0c28b085cd35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimator
+--- !u!114 &1730490980 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5449719547085169260, guid: 93eef77e4f89d4db28083eac9072d7ac, type: 3}
+  m_PrefabInstance: {fileID: 8715648949335704992}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90f414bfb25394b5ba9d998382c96fcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
 --- !u!1 &1822995030
 GameObject:
   m_ObjectHideFlags: 0
@@ -989,6 +1011,14 @@ PrefabInstance:
       propertyPath: interactAction
       value: 
       objectReference: {fileID: 2119604075}
+    - target: {fileID: 3170247465108937382, guid: 93eef77e4f89d4db28083eac9072d7ac, type: 3}
+      propertyPath: playerAnimator
+      value: 
+      objectReference: {fileID: 1730490979}
+    - target: {fileID: 3170247465108937382, guid: 93eef77e4f89d4db28083eac9072d7ac, type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 1730490980}
     - target: {fileID: 3170247465108937382, guid: 93eef77e4f89d4db28083eac9072d7ac, type: 3}
       propertyPath: interactAction.m_Name
       value: Interact
