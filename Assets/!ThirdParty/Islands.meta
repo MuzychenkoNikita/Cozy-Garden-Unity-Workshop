@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/!ThirdParty/Islands.meta
 guid: 3c0d502cc2d1e477283b80e5639ad5f9
+========
+guid: 6ecee220f8e704979adec19a932db1ad
+>>>>>>>> release/workshop1:Assets/!ThirdParty/bubble-garden-font/misc.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
