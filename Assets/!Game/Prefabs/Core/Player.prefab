@@ -105,6 +105,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInteraction
   interactAction: {fileID: 0}
+  playerAnimator: {fileID: 3512483167483197034}
+  playerController: {fileID: 5449719547085169260}
 --- !u!1001 &7518812992732737238
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -156,6 +158,10 @@ PrefabInstance:
     - target: {fileID: 7681656565318856433, guid: 217d06c5da1ec48a4be1950ba25ebc03, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7987011928501789308, guid: 217d06c5da1ec48a4be1950ba25ebc03, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
