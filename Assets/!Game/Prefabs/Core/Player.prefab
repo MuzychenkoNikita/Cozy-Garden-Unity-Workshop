@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5953651689165592070}
   - component: {fileID: 5449719547085169260}
   - component: {fileID: 3512483167483197034}
+  - component: {fileID: 3170247465108937382}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -56,7 +57,7 @@ CharacterController:
   m_Height: 1
   m_Radius: 0.25
   m_SlopeLimit: 45
-  m_StepOffset: 0.3
+  m_StepOffset: 0.1
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.5, z: 0}
@@ -91,6 +92,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimator
   animator: {fileID: 3321235992387629917}
+--- !u!114 &3170247465108937382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5714666751039596726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 977d779cff0574fd99540a4e77f9423a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerInteraction
+  interactAction: {fileID: 0}
 --- !u!1001 &7518812992732737238
 PrefabInstance:
   m_ObjectHideFlags: 0
